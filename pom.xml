@@ -8,13 +8,26 @@
     <artifactId>spark-pikachu</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1</version>
+
+    <properties>
+        <breeze.version>0.10</breeze.version>
+        <scala.version>2.10</scala.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.scalanlp</groupId>
+            <artifactId>breeze_${scala.version}</artifactId>
+            <version>${breeze.version}</version>
+        </dependency>
+    </dependencies>
+
     <modules>
         <module>pikachu-mllib</module>
         <module>pikachu-deeplearning</module>
         <module>pikachu-features</module>
         <module>pikachu-common</module>
-        <module>pikachu-pichel</module>
+        <module>spark-pichel</module>
     </modules>
-
 
 </project>
